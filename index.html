@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Painter</title>
+    <script async src="https://docs.opencv.org/4.x/opencv.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        let Module = {
+            onRuntimeInitialized: function() {
+                // Place your OpenCV code here or in a separate .js file
+            }
+        };
+    </script>
+    <style>
+        canvas { border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <h1>Virtual Painter</h1>
+    <video id="videoInput" width="640" height="480" autoplay></video>
+    <canvas id="canvasOutput" width="640" height="480"></canvas>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
